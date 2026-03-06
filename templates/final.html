@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Final Jeopardy</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; max-width: 600px; margin: auto; }
+input { width: 100%; padding: 10px; margin: 10px 0; font-size: 16px; }
+button { padding: 12px; font-size: 16px; cursor: pointer; width: 100%; }
+@media (max-width: 600px) { body { margin: 10px; padding: 10px; } input, button { font-size: 18px; } }
+</style>
+</head>
+<body>
+  <h1>Final Jeopardy</h1>
+  <p>{{ final_q.clue }}</p>
+  <form method="post">
+  {% for p in players %}
+    <h3>{{ p.name }} ({{ p.score }})</h3>
+    <label>Wager: <input type="number" name="wager{{ loop.index0 }}" min="0" required></label><br>
+    <label>Answer: <input name="answer{{ loop.index0 }}" spellcheck="false"></label><br>
+  {% endfor %}
+    <button type="submit">Submit Final Answers</button>
+  </form>
+</body>
+</html>

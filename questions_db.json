@@ -1,0 +1,159 @@
+{
+  "8-10 Years Old": {
+    "Torah Stories": [
+      {"clue": "Who led the Israelites out of Egypt?", "answer": "moses, moshe", "difficulty": 1},
+      {"clue": "Who is famous for his ark with animals?", "answer": "noah", "difficulty": 1},
+      {"clue": "Who had a coat of many colors?", "answer": "joseph, yosef", "difficulty": 2},
+      {"clue": "Who defeated Goliath with a sling?", "answer": "david", "difficulty": 2},
+      {"clue": "Famous scrolls of Torah found in a cave?", "answer": "dead sea scrolls", "difficulty": 3}
+    ],
+    "Jewish Customs": [
+      {"clue": "Bread eaten during Passover?", "answer": "matzah, matzo", "difficulty": 1},
+      {"clue": "Jewish day of rest?", "answer": "shabbat, sabbath", "difficulty": 1},
+      {"clue": "Festival of Lights?", "answer": "hanukkah, chanukah, hanukah, chanukkah", "difficulty": 1},
+      {"clue": "Jewish New Year?", "answer": "rosh hashanah", "difficulty": 2},
+      {"clue": "Holiday with an eight-night candle lighting ceremony?", "answer": "hanukkah, chanukah, hanukah, chanukkah", "difficulty": 2}
+    ],
+    "Hebrew Words": [
+      {"clue": "Hebrew word for peace?", "answer": "shalom", "difficulty": 1},
+      {"clue": "Hebrew word for thank you?", "answer": "todah, todah rabah, toda", "difficulty": 1},
+      {"clue": "The Hebrew alphabet has how many letters?", "answer": "22", "difficulty": 2},
+      {"clue": "Hebrew for mother?", "answer": "ima", "difficulty": 1},
+      {"clue": "Hebrew for father?", "answer": "abba", "difficulty": 1}
+    ],
+    "Jewish Heroes": [
+      {"clue": "Who saved the Jews in Purim?", "answer": "esther, queen esther", "difficulty": 1},
+      {"clue": "Famous woman judge in Israel?", "answer": "deborah", "difficulty": 2},
+      {"clue": "Who saved the Jews in the Chanukah story?", "answer": "maccabee, macabee", "difficulty": 2},
+      {"clue": "First King of Israel?", "answer": "saul, king saul, sha", "difficulty": 2},
+      {"clue": "King who built the First Temple?", "answer": "solomon, king solomon, shlomo", "difficulty": 3}
+    ],
+    "Photo Clues": [
+      {"clue": "What is the head covering shown in this picture?", "photo": "kippah.jpeg", "difficulty": 1},
+      {"clue": "Name the nine-branched candelabrum used during Hanukkah shown here.", "photo": "menorah.jpeg", "difficulty": 2}
+    ],
+    "Final Jeopardy": [
+      {"clue": "What is the name of the daughter in law of Judah?", "answer": "tamar", "difficulty": 5}
+    ]
+  },
+  "10-13 Years Old": {
+    "Bible Characters": [
+      {"clue": "Who had a coat of many colors?", "answer": "joseph, yosef", "difficulty": 1},
+      {"clue": "Who defeated Goliath with a sling?", "answer": "david", "difficulty": 1},
+      {"clue": "Famous woman Prophet in the Book of Judges?", "answer": "deborah, prophetess deborah", "difficulty": 2},
+      {"clue": "First King of Israel?", "answer": "saul, king saul, sha", "difficulty": 2},
+      {"clue": "King who built the First Temple?", "answer": "solomon, king solomon, shlomo", "difficulty": 3}
+    ],
+    "Jewish History": [
+      {"clue": "Jewish family that led revolt against the Syrian Greeks?", "answer": "maccabee, macabee", "difficulty": 2},
+      {"clue": "Famous scrolls of Torah found in a cave?", "answer": "dead sea scrolls", "difficulty": 3},
+      {"clue": "Who was the enemy of the Jews in the time of the Maccabees?", "answer": "antiochus", "difficulty": 3},
+      {"clue": "In Purim, who was the enemy of the Jews?", "answer": "haman", "difficulty": 2},
+      {"clue": "What is the name of the daughter in law of Judah?", "answer": "tamar", "difficulty": 4}
+    ],
+    "Passover & Holidays": [
+      {"clue": "Bread eaten during Passover?", "answer": "matzah, matzo", "difficulty": 1},
+      {"clue": "Which sea was split to let Israelites escape?", "answer": "red sea, sea of reeds", "difficulty": 2},
+      {"clue": "Seder plate item symbolizing bitterness?", "answer": "maror, horse radish", "difficulty": 2},
+      {"clue": "Book we read with the story of Exodus at the Seder?", "answer": "haggadah", "difficulty": 3},
+      {"clue": "Leader who brought the plagues against Egypt?", "answer": "moses, moshe", "difficulty": 3}
+    ],
+    "Hebrew Language": [
+      {"clue": "Hebrew word for peace?", "answer": "shalom", "difficulty": 1},
+      {"clue": "The Hebrew alphabet has how many letters?", "answer": "22", "difficulty": 1},
+      {"clue": "Hebrew word for thank you?", "answer": "todah, todah rabah, toda", "difficulty": 2},
+      {"clue": "Hebrew for Israel?", "answer": "yisrael", "difficulty": 2},
+      {"clue": "Modern Hebrew word for teacher?", "answer": "moreh, morah", "difficulty": 3}
+    ],
+    "Photo Clues": [
+      {"clue": "What leather-bound straps with boxes are wrapped on the arm and head?", "photo": "tefillin.jpeg", "difficulty": 1},
+      {"clue": "What candles are traditionally lit to welcome Shabbat?", "photo": "shabbat candles.jpeg", "difficulty": 2}
+    ],
+    "Final Jeopardy": [
+      {"clue": "What is the name of the book that tells the story of Purim?", "answer": "esther", "difficulty": 5}
+    ]
+  },
+  "Teens": {
+    "Torah & Bible": [
+      {"clue": "First King of Israel?", "answer": "saul, king saul, sha", "difficulty": 1},
+      {"clue": "King who built the First Temple?", "answer": "solomon, king solomon, shlomo", "difficulty": 2},
+      {"clue": "Famous woman Prophet in the Book of Judges?", "answer": "deborah, prophetess deborah", "difficulty": 3},
+      {"clue": "Jewish family that led revolt against the Syrian Greeks?", "answer": "maccabee, macabee", "difficulty": 3},
+      {"clue": "Famous scrolls of Torah found in a cave?", "answer": "dead sea scrolls", "difficulty": 4}
+    ],
+    "Jewish History": [
+      {"clue": "Who saved the Jews in Purim?", "answer": "esther, queen esther", "difficulty": 2},
+      {"clue": "In Purim, who was the enemy of the Jews?", "answer": "haman", "difficulty": 2},
+      {"clue": "What tribe was Haman from?", "answer": "agagite", "difficulty": 3},
+      {"clue": "Which tribe was Esther from?", "answer": "benjamin", "difficulty": 3},
+      {"clue": "How many provinces in Persian Empire?", "answer": "27", "difficulty": 4}
+    ],
+    "Jewish Holidays & Customs": [
+      {"clue": "Holiday commemorating the giving of the Torah?", "answer": "shavuot, shavuos", "difficulty": 2},
+      {"clue": "Festival of Lights?", "answer": "hanukkah, chanukah, hanukah, chanukkah", "difficulty": 1},
+      {"clue": "Fast commemorating the destruction of the Temple?", "answer": "tisha b'av, tisha bav", "difficulty": 3},
+      {"clue": "New Year of the Trees (celebrated in Israel)?", "answer": "tu bshvat, tu b'shevat", "difficulty": 4},
+      {"clue": "Holiday with an eight-night candle lighting ceremony?", "answer": "hanukkah, chanukah, hanukah, chanukkah", "difficulty": 2}
+    ],
+    "Hebrew Language": [
+      {"clue": "The Hebrew alphabet has how many letters?", "answer": "22", "difficulty": 1},
+      {"clue": "Hebrew word for thank you?", "answer": "todah, todah rabah, toda", "difficulty": 2},
+      {"clue": "Hebrew for Israel?", "answer": "yisrael", "difficulty": 2},
+      {"clue": "Modern Hebrew word for teacher?", "answer": "moreh, morah", "difficulty": 3},
+      {"clue": "Hebrew word for peace?", "answer": "shalom", "difficulty": 1}
+    ],
+    "Photo Clues": [
+      {"clue": "What is the pointer used when reading from a Torah scroll?", "photo": "yad.jpeg", "difficulty": 1},
+      {"clue": "What special dish holds symbolic foods at the Passover seder?", "photo": "seder plate.jpeg", "difficulty": 2}
+    ],
+    "Final Jeopardy": [
+      {"clue": "Who was the enemy of the Jews in the time of the Maccabees?", "answer": "antiochus", "difficulty": 5}
+    ]
+  },
+  "Adults": {
+    "Jewish History": [
+      {"clue": "First King of Israel?", "answer": "saul, king saul, sha", "difficulty": 1},
+      {"clue": "King who built the First Temple?", "answer": "solomon, king solomon, shlomo", "difficulty": 2},
+      {"clue": "Famous woman Prophet in the Book of Judges?", "answer": "deborah, prophetess deborah", "difficulty": 3},
+      {"clue": "Jewish family that led revolt against the Syrian Greeks?", "answer": "maccabee, macabee", "difficulty": 4},
+      {"clue": "Famous scrolls of Torah found in a cave?", "answer": "dead sea scrolls", "difficulty": 5}
+    ],
+    "Torah & Bible Characters": [
+      {"clue": "Who led Israelites out of Egypt?", "answer": "moses, moshe", "difficulty": 1},
+      {"clue": "Who saved the Jews in Purim?", "answer": "esther, queen esther", "difficulty": 2},
+      {"clue": "Who saved the Jews in the Chanukah story?", "answer": "maccabee, macabee", "difficulty": 3},
+      {"clue": "What was the name of the first queen in the Purim story?", "answer": "vashti", "difficulty": 2},
+      {"clue": "What is the name of the daughter in law of Judah?", "answer": "tamar", "difficulty": 4}
+    ],
+    "Jewish Holidays & Customs": [
+      {"clue": "Holiday commemorating the giving of the Torah?", "answer": "shavuot, shavuos", "difficulty": 2},
+      {"clue": "Festival of Lights?", "answer": "hanukkah, chanukah, hanukah, chanukkah", "difficulty": 2},
+      {"clue": "Fast commemorating the destruction of the Temple?", "answer": "tisha b'av, tisha bav", "difficulty": 3},
+      {"clue": "Holiday with an eight-night candle lighting ceremony?", "answer": "hanukkah, chanukah, hanukah, chanukkah", "difficulty": 4},
+      {"clue": "New Year of the Trees (celebrated in Israel)?", "answer": "tu bshvat, tu b'shevat", "difficulty": 5}
+    ],
+    "Enemies of the Jews": [
+      {"clue": "In Purim, who was the enemy of the Jews?", "answer": "haman", "difficulty": 1},
+      {"clue": "Who was the enemy of the Jews in world war II?", "answer": "hitler, nazi germany", "difficulty": 3},
+      {"clue": "Who was the enemy of the Jews in the time of the Maccabees?", "answer": "antiochus", "difficulty": 3},
+      {"clue": "Who was the enemy of the jews in the middle ages?", "answer": "crusaders", "difficulty": 4},
+      {"clue": "What terrorist group is associated with October 7, 2023?", "answer": "hamas", "difficulty": 5}
+    ],
+    "Hebrew Language": [
+      {"clue": "Hebrew word for peace (also a common name)?", "answer": "shalom", "difficulty": 1},
+      {"clue": "The Hebrew alphabet has how many letters?", "answer": "22", "difficulty": 1},
+      {"clue": "Hebrew word for thank you?", "answer": "todah, todah rabah, toda", "difficulty": 2},
+      {"clue": "Hebrew for Israel?", "answer": "yisrael", "difficulty": 2},
+      {"clue": "Modern Hebrew word for teacher?", "answer": "moreh, morah", "difficulty": 3}
+    ],
+    "Photo Clues": [
+      {"clue": "What candles are used during the Havdalah ceremony to mark the end of Shabbat?", "photo": "havdalah candles.jpeg", "difficulty": 1},
+      {"clue": "What is the decorative case containing a parchment on doorposts?", "photo": "mezuzzah.jpeg", "difficulty": 2},
+      {"clue": "What wedding document with beautiful calligraphy is traditional?", "photo": "ketuba.jpeg", "difficulty": 3},
+      {"clue": "What cup is filled with wine for the blessing on Shabbat or holidays?", "photo": "kiddush cup.jpeg", "difficulty": 4}
+    ],
+    "Final Jeopardy": [
+      {"clue": "How many provinces in Persian Empire?", "answer": "27", "difficulty": 5}
+    ]
+  }
+}

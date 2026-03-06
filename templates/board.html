@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Jeopardy Board</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 10px; padding: 10px; }
+table { border-collapse: collapse; margin: 20px auto; width: 100%; max-width: 800px; }
+th, td { border: 2px solid #333; padding: 10px; text-align: center; font-size: 14px; }
+th { background: #007bff; color: white; }
+a { text-decoration: none; color: #007bff; font-weight: bold; }
+button { padding: 10px 20px; margin: 20px; cursor: pointer; font-size: 16px; }
+.quit-btn { background: red; color: white; border: none; }
+.quit-btn:hover { background: darkred; }
+@media (max-width: 600px) {
+  th, td { padding: 8px; font-size: 12px; }
+  button { font-size: 14px; padding: 8px 16px; }
+  table { font-size: 12px; }
+}
+</style>
+</head>
+<body>
+  <h1>Jeopardy Board</h1>
+  <p>Question {{ rounds_played }} of {{ max_rounds if max_rounds>0 else total_questions }}</p>
+  <h2>Scoreboard</h2>
+  <ul>
+  {% for p in players %}
+    <li>{{ p.name }}: ${{ p.score }}</li>
+  {% endfor %}
+  </ul>
+  <p>Current Turn: {{ players[current].name }}</p>
+  <table border="1">
+  {% for cat, qs in board.items() %}
+    {% if cat!='Final Jeopardy' %}
+    <tr><th>{{ cat }}</th>
+      {% for q in qs %}
+        <td>
+          {% if q.asked %}<strong>X</strong>{% else %}
+            <a href="{{ url_for('question', category=cat, idx=loop.index0) }}">{{ q.value }}</a>
+          {% endif %}
+        </td>
+      {% endfor %}
+    </tr>
+    {% endif %}
+  {% endfor %}
+  </table>
+  <p><a href="{{ url_for('quitgame') }}"><button class="quit-btn">Quit Game</button></a></p>
+</body>
+</html>

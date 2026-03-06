@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Game Over</title>
+<style>body { font-family: Arial, sans-serif; text-align: center; margin: 20px; padding: 20px; }
+.winner { color: gold; font-size: 24px; }
+button { padding: 12px 24px; font-size: 16px; cursor: pointer; }
+@media (max-width: 600px) { body { margin: 10px; padding: 10px; } .winner { font-size: 20px; } button { font-size: 18px; } }
+</style>
+</head>
+<body>
+  <h1>Game Over!</h1>
+  <h2>Final Scores</h2>
+  <ul style="list-style:none;">
+  {% for p in players %}
+    <li style="font-size:18px;">{{ p.name }}: ${{ p.score }}</li>
+  {% endfor %}
+  </ul>
+  {% set max_score = players | map(attribute='score') | max %}
+  {% set winners = [] %}
+  {% for p in players %}
+    {% if p.score == max_score %}
+      {% set _ = winners.append(p.name) %}
+    {% endif %}
+  {% endfor %}
+  {% if winners | length == 1 %}
+    <p class="winner">🎉 Winner: {{ winners[0] }} 🎉</p>
+  {% else %}
+    <p class="winner">🎉 Tie between: {{ winners | join(', ') }} 🎉</p>
+  {% endif %}
+  <p><a href="{{ url_for('quitgame') }}"><button>Play Again</button></a></p>
+</body>
+</html>

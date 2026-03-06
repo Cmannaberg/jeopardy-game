@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeopardy Player Setup</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; }
+    input { padding: 8px; margin: 5px 0; width: 100%; font-size: 16px; }
+    button { padding: 10px 20px; margin-top: 20px; font-size: 16px; cursor: pointer; width: 100%; }
+    @media (max-width: 600px) { body { margin: 20px; padding: 10px; } input, button { font-size: 18px; } }
+  </style>
+</head>
+<body>
+  <h1>Player Setup - {{ theme }}</h1>
+  <form method="post">
+    <label>Number of players: <input type="number" name="num_players" min="1" required></label><br>
+    <div id="names"></div>
+    <label>Rounds (0 for all): <input type="number" name="rounds" min="0" value="0"></label><br>
+    <button type="submit">Start Game</button>
+  </form>
+  <script>
+    const numInput = document.querySelector('input[name="num_players"]');
+    const namesDiv = document.getElementById('names');
+    numInput.addEventListener('change', () => {
+      namesDiv.innerHTML = '';
+      let n = parseInt(numInput.value) || 0;
+      for (let i=0;i<n;i++) {
+        const lbl = document.createElement('label');
+        lbl.textContent = `Player ${i+1} name: `;
+        const inp = document.createElement('input');
+        inp.name = `name${i}`;
+        inp.placeholder = `Player ${i+1}`;
+        lbl.appendChild(inp);
+        namesDiv.appendChild(lbl);
+        namesDiv.appendChild(document.createElement('br'));
+      }
+    });
+  </script>
+</body>
+</html>

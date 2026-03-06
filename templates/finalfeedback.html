@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Final Jeopardy Results</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; max-width: 600px; margin: auto; }
+.correct { color: green; }
+.incorrect { color: red; }
+button { padding: 12px 24px; font-size: 16px; cursor: pointer; }
+@media (max-width: 600px) { body { margin: 10px; padding: 10px; } button { font-size: 18px; } }
+</style>
+</head>
+<body>
+  <h1>Final Jeopardy Results</h1>
+  <p>The correct answer was: <strong>{{ correct_answer }}</strong></p>
+  <ul>
+  {% for p, wager, correct in results %}
+    <li>
+      {{ p.name }}: 
+      {% if correct %}
+        <span class="correct">✓ Correct!</span> +${{ wager }}
+      {% else %}
+        <span class="incorrect">✗ Incorrect</span> -${{ wager }}
+      {% endif %}
+      (New total: ${{ p.score }})
+    </li>
+  {% endfor %}
+  </ul>
+  <p><a href="{{ url_for('gameover') }}"><button>See Final Scores</button></a></p>
+</body>
+</html>

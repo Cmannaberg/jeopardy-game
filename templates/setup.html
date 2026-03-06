@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeopardy Theme Selection</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; }
+    .theme-btn { width: 100%; padding: 15px; margin: 10px 0; font-size: 16px; cursor: pointer; border: 2px solid #333; background: #f0f0f0; }
+    .theme-btn:hover { background: #007bff; color: white; }
+    @media (max-width: 600px) { body { margin: 20px; padding: 10px; } .theme-btn { font-size: 18px; padding: 20px; } }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Jeopardy!</h1>
+  <h2>Select a Theme:</h2>
+  <form method="post">
+    <button type="submit" name="theme" value="8-10 Years Old" class="theme-btn">🧒 8-10 Years Old</button>
+    <button type="submit" name="theme" value="10-13 Years Old" class="theme-btn">👦 10-13 Years Old</button>
+    <button type="submit" name="theme" value="Teens" class="theme-btn">👨 Teens</button>
+    <button type="submit" name="theme" value="Adults" class="theme-btn">👴 Adults</button>
+  </form>
+</body>
+</html>

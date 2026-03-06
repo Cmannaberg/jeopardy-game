@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Answer Feedback</title>
+<style>
+body { font-family: Arial, sans-serif; text-align: center; margin: 20px; padding: 20px; }
+.correct { color: green; font-size: 24px; }
+.incorrect { color: red; font-size: 24px; }
+button { padding: 12px 24px; font-size: 16px; cursor: pointer; }
+@media (max-width: 600px) { body { margin: 10px; padding: 10px; } button { font-size: 18px; } }
+</style>
+</head>
+<body>
+  {% if photo %}
+    <img src="{{ url_for('photo', filename=photo) }}" alt="question photo" style="max-width:100%;height:auto;margin:10px 0;">
+  {% endif %}
+  {% if correct %}
+    <h1 class="correct">✓ Correct!</h1>
+    <p>+${{ wager }}</p>
+  {% else %}
+    <h1 class="incorrect">✗ Incorrect</h1>
+    <p>The correct answer was: <strong>{{ correct_answer }}</strong></p>
+    <p>-${{ wager }}</p>
+  {% endif %}
+  <p><a href="{{ url_for('board') }}"><button>Continue</button></a></p>
+</body>
+</html>
