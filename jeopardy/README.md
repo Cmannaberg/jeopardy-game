@@ -2,6 +2,16 @@
 
 A customizable Jeopardy-style game built with Flask.
 
+## 3-Command Quick Start (macOS/Linux)
+
+```bash
+git clone https://github.com/Cmannaberg/jeopardy-game.git
+cd jeopardy-game/jeopardy
+python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt && python flask_app.py
+```
+
+Then open: http://127.0.0.1:5000
+
 ## Features
 
 - Theme/category question board
@@ -66,6 +76,17 @@ python flask_app.py
 
 - http://127.0.0.1:5000
 
+## Quick Start (Windows PowerShell)
+
+```powershell
+git clone https://github.com/Cmannaberg/jeopardy-game.git
+cd jeopardy-game/jeopardy
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python flask_app.py
+```
+
 ## Managing Questions and Photos
 
 ### List clues in a category (with indices)
@@ -110,3 +131,14 @@ python manage_questions.py refresh-thumbnails --filename "kippah.jpeg"
 - Keep original images in `photos/`.
 - Thumbnails in `thumbnails/` are generated from `photos/`.
 - If you edit `questions_db.json`, restart the app if it is already running.
+
+## Troubleshooting
+
+- `ModuleNotFoundError: No module named flask`:
+  Activate `.venv` and run `pip install -r requirements.txt`.
+- Browser says page cannot be reached:
+  Confirm app is running and open `http://127.0.0.1:5000`.
+- New photo clue image not appearing:
+  Ensure filename in `questions_db.json` exactly matches the file in `photos/`.
+- Thumbnail not updated:
+  Run `python manage_questions.py refresh-thumbnails --filename "your_file.jpeg"`.
