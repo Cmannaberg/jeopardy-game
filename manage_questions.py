@@ -120,7 +120,7 @@ def main():
 
     db = load_db()
     if args.cmd == 'list':
-        list_db(db)python
+        list_db(db)
     elif args.cmd == 'add-theme':
         add_theme(db, args.theme)
     elif args.cmd == 'add-category':
