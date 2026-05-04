@@ -34,6 +34,13 @@ def load_questions_db():
 
 def build_board(all_questions):
     difficulty_to_value = {1: 100, 2: 200, 3: 300, 4: 400, 5: 500}
+    reflective_daily_double_prompts = [
+        'What do you enjoy most about Shabbat?',
+        'List 3 favorite Jewish foods.',
+        'List 3 favorite Jewish holidays.',
+        'What is one Jewish value that inspires you and why?',
+        'Share one favorite Jewish memory from a holiday or family tradition.',
+    ]
     board = {}
     for category, questions in all_questions.items():
         board[category] = []
@@ -62,6 +69,8 @@ def build_board(all_questions):
         if category != 'Final Jeopardy' and board[category]:
             idx = random.randint(0, len(board[category]) - 1)
             board[category][idx]['daily_double'] = True
+            board[category][idx]['reflective_daily_double'] = True
+            board[category][idx]['reflective_prompt'] = random.choice(reflective_daily_double_prompts)
     return board
 
 
@@ -178,7 +187,11 @@ def question(category, idx):
         else:
             wager = q['value']
         
-        correct = check_answer(answer, q['answer'])
+        if q.get('reflective_daily_double'):
+            # Reflective Daily Double prompts are open-ended; any non-empty response counts.
+            correct = bool(answer.strip())
+        else:
+            correct = check_answer(answer, q['answer'])
         if correct:
             players[current]['score'] += wager
         else:
@@ -200,7 +213,19 @@ def question(category, idx):
         return render_template('feedback.html', correct=correct, wager=wager, correct_answer=correct_ans, photo=photo)
 
     daily = q.get('daily_double') and players[current]['score'] >= 100
-    return render_template('question.html', question=q, category=category, idx=idx, daily=daily, current_player=players[current])
+    display_question = dict(q)
+    reflective = bool(daily and q.get('reflective_daily_double'))
+    if reflective:
+        display_question['clue'] = q.get('reflective_prompt', q['clue'])
+    return render_template(
+        'question.html',
+        question=display_question,
+        category=category,
+        idx=idx,
+        daily=daily,
+        reflective=reflective,
+        current_player=players[current],
+    )
 
 @app.route('/final', methods=['GET', 'POST'])
 def final():

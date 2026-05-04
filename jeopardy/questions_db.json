@@ -5,21 +5,21 @@
       {"clue": "Who is famous for his ark with 2 of each animals?", "answer": "noah, noach", "difficulty": 1},
       {"clue": "Who had a coat of many colors?", "answer": "joseph, yosef, joey", "difficulty": 2},
       {"clue": "Who was the young shepherd who defeated Goliath with a slingshot?", "answer": "david", "difficulty": 2},
-      {"clue": "Famous scrolls of Torah found in a cave?", "answer": "dead sea scrolls", "difficulty": 3}
+      {"clue": "Which Famous scrolls of Torah were found in a cave?", "answer": "dead sea scrolls", "difficulty": 3}
     ],
     "Jewish Customs": [
       {"clue": "Bread eaten during Passover?", "answer": "matzah, matzo", "difficulty": 1},
       {"clue": "Jewish day of rest?", "answer": "shabbat, sabbath", "difficulty": 1},
-      {"clue": "Celebrate receiving the Torah at Mt. Sinai?", "answer": "shavuot, feast of weeks", "difficulty": 2},
-      {"clue": "Jewish New Year?", "answer": "rosh hashanah", "difficulty": 2},
-      {"clue": "Day of Repentance?", "answer": "yom kippur", "difficulty": 3}
+      {"clue": "which holiday do we Celebrate receiving the Torah at Mt. Sinai?", "answer": "shavuot, feast of weeks", "difficulty": 2},
+      {"clue": "what holy day is the Jewish New Year in the fall?", "answer": "rosh hashanah", "difficulty": 2},
+      {"clue": "which Holy Day is the Day of Repentance?", "answer": "yom kippur", "difficulty": 3}
     ],
     "Hebrew Words": [
       {"clue": "Hebrew word for peace?", "answer": "shalom", "difficulty": 1},
       {"clue": "Hebrew word for thank you?", "answer": "todah, todah rabah, toda", "difficulty": 1},
       {"clue": "The Hebrew alphabet has how many letters?", "answer": "22", "difficulty": 2},
-      {"clue": "Hebrew for mother?", "answer": "ima", "difficulty": 1},
-      {"clue": "Hebrew for father?", "answer": "abba", "difficulty": 1}
+      {"clue": "Hebrew for mother?", "answer": "ima, ema", "difficulty": 1},
+      {"clue": "Hebrew for father?", "answer": "abba, aba", "difficulty": 1}
     ],
     "Jewish Heroes": [
       {"clue": "Which woman saved the Jews in the Purim story?", "answer": "esther, queen esther", "difficulty": 1},
@@ -33,14 +33,14 @@
       {"clue": "Name the nine-branched candelabrum used during Hanukkah shown here.", "photo": "menorah.jpeg", "difficulty": 2}
     ],
     "Final Jeopardy": [
-      {"clue": "name of both of Moses' siblings?", "answer": "aaron, miriam", "difficulty": 5}
+      {"clue": "name of both of Moses' siblings?", "answer": "aaron miriam, miriam aaron", "difficulty": 5}
     ]
   },
   "Level II": {
     "Bible Characters": [
       {"clue": "Who was Jacob's twin?", "answer": "esau, esav", "difficulty": 1},
-      {"clue": "When David was a lad he was friends with?", "answer": "jonathan", "difficulty": 1},
-      {"clue": "Famous strong warrior  in the Book of Judges?", "answer": "samson, shimshon", "difficulty": 3},
+      {"clue": "When David was a lad he was best friends with?", "answer": "jonathan", "difficulty": 1},
+      {"clue": "Famous strong warrior/prophet  in the Book of Judges?", "answer": "samson, shimshon", "difficulty": 3},
       {"clue": "third King of Israel?", "answer": "solomon, king solomon, shlomo", "difficulty": 2},
       {"clue": "King who played Harp and composed Psalms?", "answer": "david, king david, david ha'melech", "difficulty": 4}
     ],
@@ -52,10 +52,10 @@
       {"clue": "City in Canaan where Reuben and Levi massacred all the men?", "answer": "shechem", "difficulty": 4}
     ],
     " JewishHolidays": [
-      {"clue": "soup eaten during Pesachr?", "answer": "matzah ball soup, matzoball soup", "difficulty": 1},
+      {"clue": "popular Ashkenazi soup eaten during Pesachr?", "answer": "matzah ball soup, matzoball soup", "difficulty": 1},
       {"clue": "to celebrate Rosh Hashanah, Jews eat?", "answer": "apples and honey", "difficulty": 2},
       {"clue": "Seder plate item symbolizing bitterness?", "answer": "maror, horse radish", "difficulty": 2},
-      {"clue": "Book we read with the story of Exodus at the Seder?", "answer": "haggadah", "difficulty": 3},
+      {"clue": "Book we use to tell the story of Exodus during the Seder?", "answer": "haggadah", "difficulty": 3},
       {"clue": "the four questions of the seder all begin with?", "answer": "why is this night different from all other nights, mah nishtanah", "difficulty": 3}
     ],
     "Hebrew Language": [
@@ -70,12 +70,12 @@
       {"clue": "What candles are traditionally lit to welcome Shabbat?", "photo": "shabbat candles.jpeg", "difficulty": 2}
     ],
     "Final Jeopardy": [
-      {"clue": "book in the Tanach that tells the story of two women that struggled together; the younger woman was the great grandmother of King David?", "answer": "book ofruth", "difficulty": 5}
+      {"clue": "book in the Tanach that tells the story of two women that struggled together; the younger woman was the great grandmother of King David?", "answer": "book of ruth, ruth", "difficulty": 5}
     ]
   },
-  "TeeLevel III": {
+  "Level III": {
     "Torah & Bible": [
-      {"clue": "name the 5 books of Moses?", "answer": "genesis, exodus, leviticus, numbers, deuteronomy", "difficulty": 1},
+      {"clue": "name the last of the 5 books of Moses?", "answer": "deuteronomy, ", "difficulty": 1},
       {"clue": "for how many years were the israelites in the desert during the Exodus?", "answer": "40", "difficulty": 2},
       {"clue": "what was the first city the israelites conquered in the Promised Land?", "answer": "jericho", "difficulty": 3},
       {"clue": "king david established the capital in which city?", "answer": "jerusalem", "difficulty": 4},

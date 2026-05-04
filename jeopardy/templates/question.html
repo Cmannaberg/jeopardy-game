@@ -12,6 +12,9 @@ button { padding: 12px; font-size: 16px; cursor: pointer; width: 100%; }
   <h1>{{ category }} ${{ question.value }}</h1>
   {% if daily %}
     <p>Daily Double!</p>
+    {% if reflective %}
+      <p><em>Reflective prompt: there is no single right answer.</em></p>
+    {% endif %}
   {% endif %}
   {% if question.photo %}
     <img src="{{ url_for('thumbnail', filename=question.photo) }}" alt="photo clue" style="max-width:100%;height:auto;margin:10px 0;">
